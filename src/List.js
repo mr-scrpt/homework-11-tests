@@ -40,13 +40,13 @@ export const List = () => {
     <>
       <ul>
         {state.map(item => (
-          <li key={item} onClick={onRemove(item)}>
+          <li key={item} onClick={onRemove(item)} className='listitem'>
             {item}
           </li>
         ))}
       </ul>
-      <input value={text} onChange={updateText} />
-      <button onClick={onAdd}>Add item</button>
+      <input value={text} onChange={updateText} className="input"/>
+      <button onClick={onAdd} className='button'>Add item</button>
     </>
   );
 };
